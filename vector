@@ -1,3 +1,6 @@
+#include <vector>
+#include <algorithm>//算法(sort)
+
 vector <double> vecDouble = {34.2, 34.3, 54.0, 56.3};
 //向数组插入数据
 vectorDouble.push_back(100.8);//在数组的尾部插入一个数字
@@ -15,3 +18,7 @@ for(it = vectorDouble.begin(); it != vectorDouble.end(); ++it)
 {
     cout << *it << endl;
 }
+
+
+//排序
+sort(vectorDouble.begin(), vectorDouble.end())
