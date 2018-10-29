@@ -11,3 +11,9 @@ int main()
 	getchar();
 	return 0;
 }
+
+//空指针
+int * ptr1 = nullptr;//等价于int * ptr1 = 0;
+
+//需要包含cstdlib
+int * ptr2 = NULL;
