@@ -1,0 +1,17 @@
+vector <double> vecDouble = {34.2, 34.3, 54.0, 56.3};
+//向数组插入数据
+vectorDouble.push_back(100.8);//在数组的尾部插入一个数字
+
+for(int i = 1; i < vectorDouble.size(); i++)
+{
+    cout << vectorDouble[i]
+}
+
+//集合的通用遍历方法：使用迭代器 iterator
+//迭代器的基本用法：
+vector <double>::iterator it;//得到迭代器对象-实际上是一个指针对象
+//从第一个元素开始迭代
+for(it = vectorDouble.begin(); it != vectorDouble.end(); ++it)
+{
+    cout << *it << endl;
+}
