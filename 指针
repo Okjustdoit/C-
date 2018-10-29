@@ -1,0 +1,13 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	//cout << "sss" << endl;
+	char ch = 'a';
+	char * ptr_ch = &ch;//c/c++中默认char * 是字符串类型,所以得转换成任意类型才能显示ch的地址
+	cout << (void *)ptr_ch << '\t' << *ptr_ch <<endl;
+	getchar();
+	return 0;
+}
