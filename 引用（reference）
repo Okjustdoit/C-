@@ -6,3 +6,22 @@ int& refValue = int_value;
 引用和指针的关系
 引用对指针进行了简单封装，底层任然是指针
 获取引用地址是，编译器会进行内部转换
+//////////////////////////////////////////////
+#include <iostream>
+
+using namespace std;
+
+void change(int &num)
+{
+	num++;
+}
+
+int main()
+{
+	int num = 10;
+	change(num);
+	cout << "num = " << num << endl;
+
+	getchar();
+}
+////////////////////////////////////////////////////////////
