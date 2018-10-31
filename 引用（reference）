@@ -11,7 +11,7 @@ int& refValue = int_value;
 
 using namespace std;
 
-void change(int &num)
+void change(int &num)//引用
 {
 	num++;
 }
@@ -20,7 +20,7 @@ int main()
 {
 	int num = 10;
 	change(num);
-	cout << "num = " << num << endl;
+	cout << "num = " << num << endl;//num = 11
 
 	getchar();
 }
