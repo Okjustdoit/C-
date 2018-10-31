@@ -1,7 +1,11 @@
+引用必须初始化，不可以引用常亮
 int int_value = 32;
 
 //refValue指向int_value,是int_value的另一个名字
 int& refValue = int_value;
+
+指向常量引用(const)
+const double& d = 12.5;
 
 引用和指针的关系
 引用对指针进行了简单封装，底层任然是指针
