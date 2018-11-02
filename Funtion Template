@@ -1,3 +1,13 @@
 函数模板实际上就是一个通用函数
  1、函数定义时不指定具体的数据类型（使用虚拟类型代替）
  2、函数被调用时编译器根据实参反推数据类型—类型的参数啊
+
+函数声明
+template<typename T> void swap(T&, T&);
+
+函数定义
+template<typename T>
+void swap(T &a, T &b)
+{
+ 
+}
