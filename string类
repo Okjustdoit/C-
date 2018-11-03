@@ -23,7 +23,7 @@ int main()
 
     str1 = "Ok";
     cin >> str2;
-    str3 = str1 + str2;
+    str3 = str1 + str2;//字符串拼接
     cout << "str3 = " << str3 << endl;
 
     //原始字符串，将“（和）"用作定界符
