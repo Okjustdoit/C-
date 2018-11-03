@@ -9,3 +9,6 @@
   2、一般构造（重载构造）
   3、拷贝构造
 如果构造函数中，只有一个是带唯一的参数：可以直接用等于号赋值
+Student（类）
+Student str1;//在栈内存中直接分配空间
+Student str2 = new Student("OK", "Just");//堆内存
