@@ -1,0 +1,36 @@
+#include <iostream>
+#include <string>//string类
+
+using namespace std;
+
+int main()
+{
+    const int csize = 20;
+    char name1[csize];
+    char name2[csize];
+    string str1;
+    string str2;
+    string str3;
+
+    cin >> name1;//单词输入
+    cout << "name1 = " << name1 << endl;
+    cin.get();//接收单个字符（回车）
+    cin .getline(name1, csize);//读取一行输入，丢弃换行符
+    cout << "name1 = " << name1 << endl;
+
+    cin.get(name2, csize);//读取一行，将换行符保留在输入序列中，所以在下次输入时要考虑前面留下的换行符
+    cout << "name2 = " << name2 << endl;
+
+    str1 = "Ok";
+    cin >> str2;
+    str3 = str1 + str2;
+    cout << "str3 = " << str3 << endl;
+
+    //原始字符串，将“（和）"用作定界符
+    cout << R"(Jim "King" Tutt uses "\n" instead of endl.)" <<'\n';
+    //同样输出
+    cout << "Jim \"King\" Tutt uses \"\\n\" instead of endl." << endl;
+
+
+    return 0;
+}
