@@ -1,0 +1,6 @@
+1、算法
+  #include <iterator>
+  #include <algorithm>
+2、随机函数
+  #include <cstdlib>
+  #include <ctime>
