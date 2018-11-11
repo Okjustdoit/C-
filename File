@@ -1,0 +1,9 @@
+#include <fstream> //for file I/O
+写
+ofstream outFile; //create object for output
+outFile.open("文件名.txt"); //associate with a file
+
+int year;
+double price;
+cin >> year;
+outFile <<"Year :" << year << endl; //write file
