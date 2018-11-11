@@ -18,5 +18,6 @@ struct donor  //define structure
 4、使用new创建动态结构
   donor *Donor = new donor;
     Donor->value = 100;
+  delete Donor;//记住释放掉
   donor *Donor1 = new donor[100];
     (*(Donor1 + 1)).name = "K"
