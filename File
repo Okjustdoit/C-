@@ -7,3 +7,10 @@ int year;
 double price;
 cin >> year;
 outFile <<"Year :" << year << endl; //write file
+
+读
+ifstream inFile; //object for handling file input
+inFile.open("文件名.txt");
+
+double value;
+inFile >> value; //get first value
