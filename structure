@@ -1,1 +1,22 @@
 1、结构体标识符是结构名，则使用句点运算符，如果标识符是指向结构的指针，则使用箭头运算符
+struct donor  //define structure
+{
+  char name[20];
+  int value;
+}
+
+//creat structure variable
+1、donor donor1;
+2、在定义结构时同时创建结构变量
+  struct donor  //define structure
+  {
+    char name[20];
+    int value;
+  }donor1,donor2;
+3、结构数组
+  donor Donor[100];
+4、使用new创建动态结构
+  donor *Donor = new donor;
+    Donor->value = 100;
+  donor *Donor1 = new donor[100];
+    (*(Donor1 + 1)).name = "K"
