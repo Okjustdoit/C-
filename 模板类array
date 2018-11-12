@@ -1,0 +1,4 @@
+与数组一样，array对象的长度也是固定的，也使用栈（静态内存分配）。
+#include <array>
+array<int, 5> ai; //create array object of 5 ints
+可以将一个array对象赋给另一个array对象
