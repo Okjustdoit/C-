@@ -1,0 +1,2 @@
+while(cin >> rplace.x >> rplace);
+cin是istream类的一个对象。抽取运算符（>>）被设计使得cin>>rplace.x也是一个istream对象
