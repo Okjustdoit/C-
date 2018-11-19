@@ -17,3 +17,7 @@ C++中返回值类型不能是数组，但可以是其他任何类型（可以�
     double pan(int);//函数原型
     double (*pf)(int);//pf points to a funtion that takes
     pf = pan;
+调用函数
+    double x = pan(4);
+    double y = (*pf)(5);//valid
+    double y = pf(5);//valid
