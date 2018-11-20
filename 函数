@@ -21,3 +21,7 @@ C++中返回值类型不能是数组，但可以是其他任何类型（可以�
     double x = pan(4);
     double y = (*pf)(5);//valid
     double y = pf(5);//valid
+    
+const double * f1(const double ar[], int n);  //funtion declaration
+const double * (*p1)(const double *,int) = f1;
+cout << (*p1)(av,3) << ":" << *(*p1)(av,3) <<endl;
