@@ -3,3 +3,4 @@ cin是istream类的一个对象。抽取运算符（>>）被设计使得cin>>rpl
 
 cin:忽略空格和换行符
 cin.get(ch):读取输入中的下一个字符（包括空格），并赋值给ch
+ch = cin.get()
