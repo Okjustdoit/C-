@@ -1,0 +1,4 @@
+typedef double real;  //make real another name for double
+
+函数指针类型的别名：将别名当做标识符进行声明，并在开头使用关键字typedef
+typedef const double * (*p_fun)(const double *,int);  //p_fun now a type name
