@@ -45,3 +45,9 @@ int main()
 	double && jref = 2.0 * j + 18.5;
 注意：如果函数调用的参数不是左值或与相应的const引用参数的类型不匹配，则C++将创建类型正确的匿名变量，
 	将函数调用的参数的值传递给该匿名变量，并让参数来引用该变量。
+
+
+引用和类对象
+	const string & version2(string & s1, const string & s2);
+引用和对象
+	void file_it(ostream & os, double fo, const double fe[], int n);
