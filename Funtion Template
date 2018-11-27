@@ -11,3 +11,10 @@ void swap(T &a, T &b)
 {
  
 }
+
+模板重载
+template <typename T>
+void swap(T &a, T &b);
+//传递数组
+template <typename T>
+void swap(T *a, T *b, int n);
