@@ -18,3 +18,12 @@ void swap(T &a, T &b);
 //传递数组
 template <typename T>
 void swap(T *a, T *b, int n);
+
+具体化
+ 1、显示具体化（explicit specialization）
+  template <> void swap<job>(job &, job &);//swap<job>中的<job>是可选的
+ 2.隐式实例化（模板）
+  模板并非函数定义，但使用int的模板实例是函数定义。
+  template<typename T> void swap(T&, T&);
+ 3、显示实例化
+  template void swap<int>(int, int);
