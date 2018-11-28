@@ -1,6 +1,10 @@
 #include <iostream>
 #include <string>//string类
 
+访问string对象中的字符，用数组形式访问
+string str = "Justdoit";
+cout << str[2] << endl;
+
 using namespace std;
 
 int main()
