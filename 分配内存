@@ -13,4 +13,17 @@
   C++11
   double * pin = new int(99.9);
   int * ar = new int[4] {2,3,4,5};
+  
+定位new运算符
+  定位new函数不可替换，但可重载  
+  需要包含头文件new //#include <new>
+  
+  p2 = new (buffer1)int[20]; //new(20 * sizeof(int), buffer1);
+  char buffer1[50];
+  /**
+   *第一个参数std::size_t:指定请求的字节数
+   *@parm buffer1:指定位置
+   */
+  new(20 * sizeof(int), buffer1);
+  
 链接性为内部的变量只能在其所属的文件中使用，但常规外部变量都具有外部lianje性，即可以在其他文件中使用。
