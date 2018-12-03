@@ -33,3 +33,6 @@
   using声明和using编译指令
     using声明使特定的标识符可用，using编译指令使整个名称空间可用
     using声明由被限定的名称和它前面的关键字using组成
+      using Jill::fetch;
+    using编译指令由名称空间名和它前面的关键字using namespace组成
+      using namespace std;  //make names available globally
