@@ -7,3 +7,18 @@
 什么是接口？
     接口是一个共享框架，供两个系统（如用户和计算机之间）交互使使用；
     接口让程序员能够编写与类对象交互得代码
+
+
+构造函数
+    默认构造函数
+    Stock::Stock()
+    {
+        company = "no name";
+        shares = 0;
+        share_val = 0.0;
+        total_val = 0.0;
+    }
+声明对象
+    Stock fitst;    //calls default constructor implicitly隐式调用默认构造函数
+    Stock first = Stock();  //calls it explicitly
+    Stock *prelief = new Stock; //calls it implicitly
