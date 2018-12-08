@@ -25,3 +25,7 @@
     Stock first = Stock();  //calls it explicitly
     Stock *prelief = new Stock; //calls it implicitly
     对于没被初始化的对象，程序使用默认构造函数来创建。
+    
+    
+this指针
+    所有的类方法都将this指针设置为调用它的对象的地址
