@@ -29,3 +29,7 @@
     
 this指针
     所有的类方法都将this指针设置为调用它的对象的地址
+    
+C++允许在类里声明常量，但不允许对它进行赋值
+    有一种方法——使用关键字static
+    static const int Months = 23;
