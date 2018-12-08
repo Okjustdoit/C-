@@ -10,6 +10,8 @@
 
 
 构造函数
+    如果程序中没有提供任何构造函数，则编译器会为程序定义一个默认构造函数；否则，必须自己提供默认构造函数。
+    
     默认构造函数
     Stock::Stock()
     {
@@ -22,3 +24,4 @@
     Stock fitst;    //calls default constructor implicitly隐式调用默认构造函数
     Stock first = Stock();  //calls it explicitly
     Stock *prelief = new Stock; //calls it implicitly
+    对于没被初始化的对象，程序使用默认构造函数来创建。
