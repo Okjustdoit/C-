@@ -28,7 +28,7 @@ class Cstu
     public:
     int a;
     double f;
-    Cstu() : a(12), f(12.2f)
+    Cstu() : a(12), f(12.2f)//成员的初始化顺序只与声明顺序有关，跟初始化列表的书写顺序无关
     {
     
     }
