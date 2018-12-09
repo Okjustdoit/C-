@@ -20,6 +20,19 @@
         share_val = 0.0;
         total_val = 0.0;
     }
+    
+    
+初始化列表
+class Cstu
+{
+    public:
+    int a;
+    double f;
+    Cstu() : a(12), f(12.2f)
+    {
+    
+    }
+}
 
 析构函数
     不带参数
