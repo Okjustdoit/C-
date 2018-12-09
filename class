@@ -38,3 +38,10 @@ this指针
 C++允许在类里声明常量，但不允许对它进行赋值
     有一种方法——使用关键字static
     static const int Months = 23;
+    
+    
+基类和子类
+    class SubClass : public SuperClass
+    {
+        
+    }
