@@ -35,6 +35,13 @@ cout << (*p1)(av,3) << ":" << *(*p1)(av,3) <<endl;
           static void fun(){}
     类外初始化
         int Cstu::a = 13;
+    使用方式
+	对象调用
+		Cstu::a
+	类名作用域
+		Cstu st1
+		st1.a
+		
     静态常量整型数据成员可以直接进行初始化
 	    static const float a = 13.12f;//不行
 	    static const int a = 13.12f;
