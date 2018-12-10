@@ -43,7 +43,14 @@ class Cstu
     Stock first = Stock();  //calls it explicitly
     Stock *prelief = new Stock; //calls it implicitly
     对于没被初始化的对象，程序使用默认构造函数来创建。
-    
+  
+临时对象
+    结构：类型+()
+    作业域：所在语句
+    Stock("Nifty food", 10, 50);
+    临时变量
+    int(12);
+    int b = int(12);//int b = 12;
     
 this指针
     所有的类方法都将this指针设置为调用它的对象的地址
