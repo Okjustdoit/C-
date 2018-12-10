@@ -42,6 +42,7 @@ class Cstu
     Stock fitst;    //calls default constructor implicitly隐式调用默认构造函数
     Stock first = Stock();  //calls it explicitly
     Stock *prelief = new Stock; //calls it implicitly
+    malloc和free不会调用构造函数和析构函数
     对于没被初始化的对象，程序使用默认构造函数来创建。
   
 临时对象
