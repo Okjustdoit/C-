@@ -70,7 +70,36 @@ this指针
 C++允许在类里声明常量，但不允许对它进行赋值
     有一种方法——使用关键字static
     static const int Months = 23;
-    
+ 
+ 
+ 拷贝构造/复制构造
+ 	CStu(const CStu & a)
+	{
+		
+	}
+ 	何时调用
+	1、新建一个对象，并将其初始化为同类现有对象
+		CStu a;//声明一个对象
+		1、CStu a1(a);
+		2、CStu a2 = a;
+		3、CStu a3 = CStu(a);
+		4、CStu* a4 = new CStu(a);
+		赋值不会调用
+			CStu s;
+			CStu p;
+			s = p;
+	2、当程序生成对象副本时
+		函数参数传递对象的值 
+		void fun(CStu b)
+		{
+		
+		}
+		函数返回对象
+		CStu fun()
+		{
+			CStu a;
+			return a;
+		}
     
 基类和子类
     class SubClass : public SuperClass
