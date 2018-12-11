@@ -12,7 +12,9 @@
   使用new运算符初始化
   C++11
   double * pin = new int(99.9);
+  delete pin
   int * ar = new int[4] {2,3,4,5};
+  delete[] ar
   
 定位new运算符
   定位new函数不可替换，但可重载  
