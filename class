@@ -104,7 +104,19 @@ C++允许在类里声明常量，但不允许对它进行赋值
 	系统默认的这个又叫浅拷贝
 	存在问题：
 		1指针成员释放时导致重复释放（野指针）
-    
+深拷贝
+	指针成员不能直接赋值，要用内存拷贝，memcpy,strcpyd等
+	#include <string.h>
+ 	 void *memcpy( void *to, const void *from, size_t count );
+ 
+	功能：函数从from中复制count 个字符到to中，并返回to指针。 如果to 和 from 重叠，则函数行为不确定。
+
+	CStu(const CSrtu & b)
+	{
+		memcpy(this->a, b.a, 8);
+	}
+ 
+ 
 基类和子类
     class SubClass : public SuperClass
     {
