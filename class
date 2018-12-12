@@ -128,6 +128,15 @@ C++允许在类里声明常量，但不允许对它进行赋值
 	1类的友元函数是非成员函数，其访问权限与成员函数相同
  	1只有在类声明中的原型中才能使用friend关键字
 
+
+运算符重载
+	ostream & operatot<<(ostream & os, CStu & stu)
+	{
+		os << stu.a;
+		return os;
+	}
+
+
 基类和子类
     class SubClass : public SuperClass
     {
