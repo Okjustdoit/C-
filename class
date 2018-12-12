@@ -139,7 +139,15 @@ C++允许在类里声明常量，但不允许对它进行赋值
 类的自动转换和强制类型转换
 	1、当构造函数只有一个参数时，可以这样初始化类对象
 		CStu stu = 100;//CStu stu(100)
+	
+	2、转换函数
+		1转换函数是类成员，没有返回值，没有参数，
+		operator int();
+		operator double();
 		
+	1调用：double p_wt = CStu;
+		int(Cstu);
+
 
 基类和子类
     class SubClass : public SuperClass
