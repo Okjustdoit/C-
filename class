@@ -130,7 +130,7 @@ C++允许在类里声明常量，但不允许对它进行赋值
 
 
 运算符重载
-	ostream & operatot<<(ostream & os, CStu & stu)
+	ostream & operatot<<(ostream & os, const CStu & stu)
 	{
 		os << stu.a;
 		return os;
