@@ -135,8 +135,16 @@ C++允许在类里声明常量，但不允许对它进行赋值
 		os << stu.a;
 		return os;
 	}
+	
 	void没有确定的大小，所以类型都可以转成void
 	1返回指针void*,输出需要强转（typedName *）成其他类型
+	
+	1后置++
+	int operator++(CStu stu, int n)
+	{
+		
+	}
+	
 输入流
 	1检测输入是否失败cin.fail()
 	
